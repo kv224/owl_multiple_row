@@ -1,0 +1,7 @@
+<h1>Owl Carousel - multiple rows responsive carousel</h1>
+<header>'Simple' example of how to achieve a <b>truly responsive multiple rows</b> carousel using Owl Carousel. <a href="https://stackoverflow.com/a/64356269/2500651">Corresponding Stack Overflow post</a>. Feel free to use this code if you need it. 👾<br/><br/>✅ Tested & working with <b>any number of columns and rows, and any breakpoints</b>. Also with loop: true/false, slideBy: 1/n/'page', etc...<br/>✅ Implementation is as efficient as possible, meaning <b>the carousel is recalculated only if absolutely necessary</b>. I haven't noticed any kind of stuttering or visual artifacts.<br/>✅ For readability and simplicity purposes, setting the desired number of rows for a given window width is done the exact same way as the native number of items, in the carousel options object. 'items' here acts as the number of columns visible at a time.<br/><br/><b>Note:</b> The whole logic is done in javascript, but be sure to add <b>data-slide-index="0..n"</b> attributes to your slides HTML, as it is needed. ⚠</header>
+
+<div class="owl-carousel owl-theme">
+ - for i in (1..12)
+  div[class="slide" data-slide-index="#{i - 1}"] #{i}
+</div>
